@@ -10,11 +10,12 @@
 
 Dentro da pasta "fqs", estaram as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
 
-Dentro da pasta "final", estaram as respostas dos pontos 1.4.
+Dentro da pasta "resultados", o arquivo "otu_table.tsv" eh a resposta do ponto 1.4
+
 
 O script "trimm_and_classify_otu.py" esta na pasta "scripts" desse repositorio, referente ao desafio 1.5.
 
 O Dockerfile esta na pasta "scripts" desse repositorio, respondendo o desafio 1.6.
 
-
+Apos os comandos rodados, para analisar os arquivos 
 
