@@ -19,7 +19,7 @@ O script "trimm_and_classify_otu.py" esta na pasta "scripts" desse repositorio, 
 
 O Dockerfile esta na pasta "scripts" desse repositorio, respondendo o desafio 1.6.
 </p>
-
+<p>&nbsp;</p>
 <p>
 Apos os comandos rodados, para analisar os arquivos fora do container, o comando:
 
