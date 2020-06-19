@@ -10,11 +10,7 @@ Para rodar o Docker, os comandos sao:
 **cd Desafio_Neoprospecta**
 
 **conda run -n qiime2-2020.2 python trimm_and_classify_otu.py** <br />
-</p>
 
-<p>&nbsp;</p>
-
-<p>
 Apos os comandos rodados, para analisar os arquivos fora do container:
 
 **<abrir outro terminal com o container aberto e rodar:>**
