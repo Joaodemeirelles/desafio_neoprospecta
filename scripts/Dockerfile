@@ -26,10 +26,6 @@ COPY 99_otu_taxonomy_gg_13_8.txt .
 
 RUN conda env create -n qiime2-2020.2 --file qiime2-2020.2-py36-linux-conda.yml
 
-#SHELL ["conda", "run", "-n", "qiime2-2020.2", "/bin/bash", "-c"]
-
-#ENTRYPOINT ["conda", "run", "-n", "qiime2-2020.2"]
-
 RUN tar -xf Desafio_Neoprospecta.tar.xz 
 
 RUN mv trimm_and_classify_otu.py gg-13-8-99-515-806-nb-classifier.qza 99_otus_gg_13_8.fasta 99_otu_taxonomy_gg_13_8.txt Desafio_Neoprospecta 
