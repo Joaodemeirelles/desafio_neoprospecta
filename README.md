@@ -9,19 +9,18 @@ Para rodar o Docker, os comandos sao:
 
 **cd Desafio_Neoprospecta**
 
-**conda run -n qiime2-2020.2 python trimm_and_classify_otu.py** <br />
+**conda run -n qiime2-2020.2 python trimm_and_classify_otu.py**
+</p>
 
+<p>&nbsp;</p>
+
+<p>
 Apos os comandos rodados, para analisar os arquivos fora do container:
 
 **<abrir outro terminal com o container aberto e rodar:>**
 
 **docker cp desafio:/Desafio_Neoprospecta/ .**
 
-</p>
-
-<p>&nbsp;</p>
-
-<p>
 Dentro da pasta "fqs", estarao as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
 
 Dentro da pasta "resultados", o arquivo "otu_table.tsv" eh a resposta do ponto 1.4
