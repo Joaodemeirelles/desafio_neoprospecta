@@ -5,7 +5,7 @@ Para rodar o Docker, os comandos sao:
 
 **docker pull jlmeirelles/desafio_neoprospecta_1:latest**
 
-**sudo docker run --name desafio -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1**
+**docker run --name desafio -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1**
 
 **cd Desafio_Neoprospecta**
 
@@ -19,7 +19,7 @@ Apos os comandos rodados, para analisar os arquivos fora do container:
 
 **<abrir outro terminal com o container aberto e rodar:>**
 
-**sudo docker export desafio > container.tar**
+**docker cp desafio:/Desafio_Neoprospecta/ .**
 
 </p>
 
