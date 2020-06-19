@@ -9,7 +9,7 @@ Para rodar o Docker, os comandos sao:
 
 **conda run -n qiime2-2020.2 python trimm_and_classify_otu.py** <br />
 </p>
-
+<p>&nbsp;</p>
 <p>
 Dentro da pasta "fqs", estaram as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
 
