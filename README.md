@@ -24,4 +24,6 @@ O Dockerfile esta na pasta "scripts" desse repositorio, respondendo o desafio 1.
 Apos os comandos rodados, para analisar os arquivos fora do container, o comando:
 
 **sudo docker export jlmeirelles/desafio_neoprospecta_1 > container.tar**
+
+Os arquivos comprimidos podem ser analisados entao
 </p>
