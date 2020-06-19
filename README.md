@@ -1,7 +1,5 @@
 # Resultado de Desafio parte 1 da Neoprospecta
 
-Scripts utilizados estao na pasta "scripts"
-
 **Para rodar o Docker, os comandos sao:**
 
 **docker pull jlmeirelles/desafio_neoprospecta_1:latest**
