@@ -17,5 +17,7 @@ O script "trimm_and_classify_otu.py" esta na pasta "scripts" desse repositorio, 
 
 O Dockerfile esta na pasta "scripts" desse repositorio, respondendo o desafio 1.6.
 
-Apos os comandos rodados, para analisar os arquivos 
+Apos os comandos rodados, para analisar os arquivos fora do container, o comando:
+
+**sudo docker export jlmeirelles/desafio_neoprospecta_1 > container.tar **
 
