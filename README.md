@@ -6,8 +6,8 @@ Para rodar o Docker, os comandos sao:
 
 **sudo docker run -it --entrypoint /bin/bash**
 
-**conda run -n qiime2-2020.2 python trimm_and_classify_otu.py**
-<pre>
+**conda run -n qiime2-2020.2 python trimm_and_classify_otu.py** <br />
+
 Dentro da pasta "fqs", estaram as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
 
 Dentro da pasta "resultados", o arquivo "otu_table.tsv" eh a resposta do ponto 1.4
