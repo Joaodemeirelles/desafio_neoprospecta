@@ -5,7 +5,9 @@ Para rodar o Docker, os comandos sao:
 
 **docker pull jlmeirelles/desafio_neoprospecta_1:latest**
 
-**sudo docker run -it --entrypoint /bin/bash**
+**sudo docker run -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1**
+
+**cd Desafio_Neoprospecta**
 
 **conda run -n qiime2-2020.2 python trimm_and_classify_otu.py** <br />
 </p>
