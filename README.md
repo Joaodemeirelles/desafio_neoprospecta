@@ -11,20 +11,33 @@ Para rodar o Docker, os comandos sao:
 
 **conda run -n qiime2-2020.2 python trimm_and_classify_otu.py** <br />
 </p>
+
 <p>&nbsp;</p>
-<p>
-Dentro da pasta "fqs", estaram as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
 
-Dentro da pasta "resultados", o arquivo "otu_table.tsv" eh a resposta do ponto 1.4
-
-O script "trimm_and_classify_otu.py" esta na pasta "scripts" desse repositorio, referente ao desafio 1.5.
-
-O Dockerfile esta na pasta "scripts" desse repositorio, respondendo o desafio 1.6.
-</p>
-<p>&nbsp;</p>
 <p>
 Apos os comandos rodados, para analisar os arquivos fora do container, o comando:
 
 **sudo docker export jlmeirelles/desafio_neoprospecta_1 > container.tar**
 
 </p>
+
+<p>&nbsp;</p>
+
+<p>
+Dentro da pasta "fqs", estarao as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
+
+Dentro da pasta "resultados", o arquivo "otu_table.tsv" eh a resposta do ponto 1.4
+</p>
+
+<p>&nbsp;</p>
+
+<p>
+Neste Github, estao todos os arquivos de interesse citados anteriormente apos seguir o mesmo pipeline. 
+  
+Dentro da pasta "respostas" estao as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
+
+Dentro da pasta "scripts", esta o arquivo "trimm_and_classify_otu.py", responsavel pela resposta dos desafios 1.3, 1.4 e 1.5.
+
+Na pasta "scripts", tambem esta o Dockerfile responsavel pela resposta ao desafio 1.6.
+</p>
+
