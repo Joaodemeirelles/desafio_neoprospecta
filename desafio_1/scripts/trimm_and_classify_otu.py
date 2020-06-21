@@ -7,12 +7,8 @@
 
 # Importando bibliotecas
 from qiime2 import Artifact
-from qiime2.plugins.vsearch.methods import dereplicate_sequences
-from qiime2.plugins.feature_classifier.methods import classify_consensus_blast
 from qiime2.plugins.dada2.methods import denoise_single
 from qiime2.plugins.vsearch.methods import cluster_features_closed_reference
-from qiime2.plugins.feature_table.methods import filter_features
-from qiime2.plugins.feature_classifier.methods import classify_consensus_vsearch
 from qiime2.plugins.feature_classifier.methods import classify_sklearn
 import sys
 import subprocess
@@ -168,7 +164,6 @@ classifier_gg = Artifact.load("gg-13-8-99-515-806-nb-classifier.qza")
 
 
 # Dereplicar sequencias e filtro de chimeras, para posterior assinalacao em OTUs
-#table_seqs, seqs = dereplicate_sequences(sequences = demux_seqs)
 table_seqs, seqs, stats = denoise_single(demultiplexed_seqs = demux_seqs, trunc_len = 250, chimera_method = "consensus", n_threads = 0)
 
 
