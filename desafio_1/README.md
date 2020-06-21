@@ -22,7 +22,7 @@ Apos os comandos rodados, para analisar os arquivos fora do container:
 
 **docker cp desafio:/Desafio_Neoprospecta/ .**
 
-Dentro da pasta "fqs", estarao as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
+Dentro da pasta "fqs", estarao as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2 e o arquivo "otu_table.tsv", resposta do ponto 1.4
 
 Dentro da pasta "resultados", o arquivo "otu_table.tsv" eh a resposta do ponto 1.4
 </p>
