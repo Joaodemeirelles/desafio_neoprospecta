@@ -1,7 +1,7 @@
 # Desafio Neoprospecta
 
-Neste repositorio, estao as respostas dos desafios da neoprospecta
+Neste repositório, estão as respostas dos desafios da neoprospecta
 
-No diretorio "desafio_1", estao as respostas do desafio 1.
+No diretório "desafio_1", estão as respostas do desafio 1.
 
-No diretorio "desafio_2", estao as respostas do desafio 2.
+No diretório "desafio_2", estão as respostas do desafio 2.
