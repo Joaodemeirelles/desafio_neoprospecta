@@ -23,13 +23,17 @@ COPY gg-13-8-99-515-806-nb-classifier.qza .
 COPY 99_otus_gg_13_8.fasta .
 COPY 99_otu_taxonomy_gg_13_8.txt .
 
-
+# Cria conda env de qiime2-2020.2
 RUN conda env create -n qiime2-2020.2 --file qiime2-2020.2-py36-linux-conda.yml
 
+# Extrai pasta do desafio
 RUN tar -xf Desafio_Neoprospecta.tar.xz 
 
+# Passa arquivos para pasta
 RUN mv trimm_and_classify_otu.py gg-13-8-99-515-806-nb-classifier.qza 99_otus_gg_13_8.fasta 99_otu_taxonomy_gg_13_8.txt Desafio_Neoprospecta 
 
+# Instala cutadapt para Trim Galore
 RUN python3 -m pip install --user --upgrade cutadapt
+
 
 RUN cd Desafio_Neoprospecta 
