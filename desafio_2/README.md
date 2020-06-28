@@ -6,7 +6,7 @@ Para rodar o Docker, os comandos sao:
   
 **docker pull jlmeirelles/desafio_neoprospecta_2:latest**
   
-**docker run  --name desafio_2 -it desafio2:latest bash**
+**docker run --name desafio_2 -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_2**
 
 </p>
 
