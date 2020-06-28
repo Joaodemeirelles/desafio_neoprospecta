@@ -1,0 +1,54 @@
+# Script para gerar PCoA em dados de metagenomica, utilizando Bray-Curtis
+# Usage: Rscript pcoa_plot.txt output_file_name.tsv
+# Example: Rscript otu_plot.txt otu_table_tax_amostras.tsv
+
+args <- commandArgs(TRUE)
+
+# Libraries
+library("ggplot2")
+library(RColorBrewer)
+library(vegan)
+
+# Read data and format it to functions
+otus <- read.table(file=args[1], sep="\t", header=TRUE)
+otus_temp <- otus[-1]
+
+# Get sample names to use as label
+Sample_Name <- colnames(otus_temp)
+
+otus <- as.data.frame(otus)
+row.names(otus_temp) <- otus[,1]
+otus <- otus_temp
+rm(otus_temp)
+otus <- prop.table(as.matrix(otus),2)
+t_otus <- t(otus)
+
+# Calculo de matriz de distancia e PCoA com metodo de Bray-Curtis
+dist_matrix <- vegdist(t_otus, method="bray")
+multi_ds <- cmdscale(dist_matrix, eig=TRUE)
+multi_ds_var <- round(multi_ds$eig/sum(multi_ds$eig)*100,1)
+multi_ds_values <- multi_ds$points
+multi_ds_data <- data.frame(Sample=rownames(multi_ds_values),
+X = multi_ds_values[,1],
+Y=multi_ds_values[,2])
+
+# Criacao de IDS de cada grupo, e criacao de cores de pontos
+group_ids <- c("Early","Early","Late","Late","Late","Late","Late","Late","Late","Late","Late","Late","Early","Early","Early","Early","Early","Early","Early")
+pallete1 <- brewer.pal(9,"Set1")
+pallete2 <- brewer.pal(7,"Set2")
+pallete3 <- brewer.pal(5,"Set3")
+big_pallete <- c(pallete1,pallete2,pallete3)
+
+
+# Plot PCoA e salve em PNG
+
+plot <- ggplot(data=multi_ds_data, aes(x=X, y=Y,color= Sample_Name)) +
+scale_color_manual(values= sample(big_pallete)) +
+geom_point(size = 5) +
+theme_bw() +
+xlab(paste("PC1 - ", multi_ds_var[1], "%", sep="")) +
+ylab(paste("PC2 - ", multi_ds_var[2], "%", sep="")) +
+ggtitle("PCoA metagenomics") +
+stat_ellipse(aes(group = group_ids),show.legend=FALSE)
+
+ggsave("PCoA_plot.png",dpi=300,width=14,limitsize=FALSE)
