@@ -26,9 +26,12 @@ Apos os comandos rodados, para analisar os arquivos fora do container:
 <p>
 Neste Github, estao todos os arquivos de interesse citados anteriormente apos seguir o mesmo pipeline. 
   
-Dentro da pasta "respostas" estao as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
+Dentro da pasta "respostas" estao a pasta "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e a pasta "dados_recebidos", aonde foram executadas na OTU dada como resposta na pasta "tables".
 
-Dentro da pasta "scripts", esta o arquivo "trimm_and_classify_otu.py", responsavel pela resposta dos desafios 1.3, 1.4 e 1.5.
+Dentro da pasta "scripts", esta o Dockerfile que roda todas as analises e os scripts em R utilizados para analise estatistica e visual.
+O script "otu_plot.txt" responde ao ponto 2.1.
+O script "pcoa_plot.txt" responde ao ponto 2.2.
+O script "deseq2_otu.txt" responde ao ponto 3.3.
 
 Na pasta "scripts", tambem esta o Dockerfile responsavel pela resposta ao desafio 1.6.
 </p>
