@@ -36,7 +36,5 @@ O script "otu_plot.txt" responde ao ponto 2.1.
 O script "pcoa_plot.txt" responde ao ponto 2.2.
 
 O script "deseq2_otu.txt" responde ao ponto 3.3.
-
-Na pasta "scripts", tambem esta o Dockerfile responsavel pela resposta ao desafio 1.6.
 </p>
 
