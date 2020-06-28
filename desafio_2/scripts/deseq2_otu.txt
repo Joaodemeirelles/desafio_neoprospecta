@@ -1,0 +1,25 @@
+library("DESeq2")
+
+args <- commandArgs(TRUE)
+
+
+coldata <- read.csv("metadata.csv",sep="\t", row.names=1)
+cts <- read.csv(args[1], sep="\t",row.names="OTU")
+cts <- cts[, rownames(coldata)]
+dds <- DESeqDataSetFromMatrix(countData = cts,
+                              colData = coldata,
+                              design = ~ time)
+
+
+# Remove singletons
+keep <- rowSums(counts(dds)) >= 2
+dds <- dds[keep,]
+
+dds <- DESeq(dds)
+res <- results(dds)
+resLFC <- lfcShrink(dds, coef="time_Late_vs_Early", type="apeglm")
+resOrdered <- res[order(res$pvalue),]
+resOrdered <- subset(resOrdered, padj < 0.05)
+
+write.csv(as.data.frame(resOrdered), 
+          file="desmame_tarde_vs_cedo.csv")
