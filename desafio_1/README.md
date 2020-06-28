@@ -33,7 +33,7 @@ Dentro da pasta "resultados", o arquivo "otu_table.tsv" é a resposta do ponto 1
 <p>
 Neste Github, estão todos os arquivos de interesse citados anteriormente apos seguir o mesmo pipeline. 
   
-Dentro da pasta "respostas" estão as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2
+Dentro da pasta "respostas" estão as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2, e o arquivo ôtu_table.tsv^, referente ao desafio 1.4
 
 Dentro da pasta "scripts", está o arquivo "trimm_and_classify_otu.py", responsável pela resposta dos desafios 1.3, 1.4 e 1.5.
 
