@@ -25,7 +25,7 @@ Apos os comandos rodados, para analisar os arquivos fora do container:
 
 <p>
   
-Dentro da pasta "respostas" estao a pasta "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e a pasta "dados_recebidos", aonde foram executadas na OTU dada como resposta na pasta "tables".
+Dentro da pasta "respostas" estao a pasta "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e a pasta "dados_recebidos", aonde foram executadas na OTU table dada como resposta na pasta "tables".
 
 Dentro da pasta "scripts", esta o Dockerfile que roda todas as analises e os scripts em R utilizados para analise estatistica e visual.
 O script "otu_plot.txt" responde ao ponto 2.1.
