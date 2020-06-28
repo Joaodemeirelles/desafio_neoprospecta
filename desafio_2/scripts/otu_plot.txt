@@ -1,0 +1,50 @@
+# Script para criar boxplot de OTU table advindo de metagenomica
+# Usage: Rscript otu_plot.txt output_file_name.tsv
+# Exemplo: Rscript otu_plot.txt new_otu_table.tsv
+
+args <- commandArgs(TRUE)
+
+# Bibliotecas
+library(ggplot2)
+library(RColorBrewer)
+
+# Le os dados
+data <- read.csv(file=args[1], sep="\t", header = TRUE)
+
+# Ordena amostras em ordem correta
+data$Desmame <- as.character(data$Desmame)
+data$Desmame <- factor(x = data$Desmame,levels=c("0","1","2","3","5","6","7","8","9","141","142","143","144","145","146","147","148","149","150"))
+
+# Setar seed para fazer sempre a mesma cor
+set.seed(6)
+
+# Gera palletas
+pallete1 <- brewer.pal(9,"Set1")
+pallete2 <- brewer.pal(8,"Set2")
+pallete3 <- brewer.pal(12,"Set3")
+pallete4 <- brewer.pal(8,"Dark2")
+pallete5 <- brewer.pal(8,"Accent")
+pallete6 <- brewer.pal(5,"BrBG")
+big_pallete <- c(pallete1,pallete2,pallete3,pallete4,pallete5,pallete6)
+
+# Cria boxplot com ggplot
+boxplot <- ggplot(data,aes(fill = OTU, y = Contagem, x = Desmame)) +
+geom_bar(position="fill", stat="identity")
+
+# Formatacao de aesthetics
+boxplot <- boxplot + scale_fill_manual(values= sample(big_pallete)) + scale_y_continuous(expand=c(0,0)) + theme(panel.background = element_rect(fill="white"),panel.border = element_blank()) + theme(legend.text = element_text(size=8)) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+
+# Salva em png
+ggsave("Otu_Table_plot_percent.png",dpi=300,width=14,limitsize=FALSE)
+
+# Faca o mesmo, so que para plot de valores absolutos
+
+# Create boxplot, with ggplot boxplot on data
+boxplot <- ggplot(data,aes(fill = OTU, y = Contagem, x = Desmame)) +
+geom_bar(position="stack", stat="identity")
+
+# Muda aesthetics
+boxplot <- boxplot + scale_fill_manual(values= sample(big_pallete)) + scale_y_continuous(expand=c(0,0)) + theme(panel.background = element_rect(fill="white"),panel.border = element_blank()) + theme(legend.text = element_text(size=8)) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+
+# Salva plot absoluto em png
+ggsave("Otu_Table_plot_absolute.png",dpi=300,width=14,limitsize=FALSE)
