@@ -27,8 +27,18 @@ Apos os comandos rodados, para analisar os arquivos fora do container:
 
 <p>
   
-Dentro da pasta "respostas" estao a pasta "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e a pasta "dados_recebidos", aonde foram executadas na OTU table dada como resposta na pasta "tables".
+Dentro da pasta "resultados" estao a pasta "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e a pasta "dados_recebidos", aonde foram executadas na OTU table dada como resposta na pasta "tables".
 
+Nos diretorios "meus_dados" e "dados_recebidos", os arquivos "Otu_Table_plot_absolute.png" e "Otu_Table_plot_percent.png" respondem o ponto 2.1.
+
+O arquivo "PCoA_plot.png" responde o ponto 2.2.
+
+O arquivo "desmame_tarde_vs_cedo.csv" responde o ponto 2.3.
+</p>
+
+<p>&nbsp;</p>
+
+<p>
 Dentro da pasta "scripts", estao os scripts utilizados nessa etapa do desafio:
 
 O arquivo Dockerfile que roda todas as analises e os scripts em R utilizados para analise estatistica e visual.
