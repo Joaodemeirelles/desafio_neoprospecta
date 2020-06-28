@@ -4,6 +4,8 @@ Link do Docker: https://hub.docker.com/repository/docker/jlmeirelles/desafio_neo
 <p>
 Para rodar o Docker, os comandos sao:
   
+**docker pull jlmeirelles/desafio_neoprospecta_2:latest**
+  
 **docker run  --name desafio_2 -it desafio2:latest bash**
 
 </p>
