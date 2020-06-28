@@ -29,11 +29,13 @@ Apos os comandos rodados, para analisar os arquivos fora do container:
   
 Dentro da pasta "resultados" estao a pasta "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e a pasta "dados_recebidos", aonde foram executadas na OTU table dada como resposta na pasta "tables".
 
-Nos diretorios "meus_dados" e "dados_recebidos", os arquivos "Otu_Table_plot_absolute.png" e "Otu_Table_plot_percent.png" respondem o ponto 2.1.
+Nos diretorios "meus_dados" e "dados_recebidos", os arquivos: 
 
-O arquivo "PCoA_plot.png" responde o ponto 2.2.
+"Otu_Table_plot_absolute.png" e "Otu_Table_plot_percent.png" respondem o ponto 2.1.
 
-O arquivo "desmame_tarde_vs_cedo.csv" responde o ponto 2.3.
+"PCoA_plot.png" responde o ponto 2.2.
+
+"desmame_tarde_vs_cedo.csv" responde o ponto 2.3.
 </p>
 
 <p>&nbsp;</p>
