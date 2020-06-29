@@ -7,7 +7,7 @@ Para rodar o Docker, os comandos são:
 
 **docker pull jlmeirelles/desafio_neoprospecta_1:latest**
 
-**docker run --name desafio -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1**
+**docker run --name desafio_1 -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1**
 
 **cd Desafio_Neoprospecta**
 
@@ -21,7 +21,7 @@ Após os comandos rodados, para analisar os arquivos fora do container:
 
 **<abrir outro terminal com o container aberto e rodar:>**
 
-**docker cp desafio:/Desafio_Neoprospecta/ .**
+**docker cp desafio_1:/Desafio_Neoprospecta/ .**
 
 Dentro da pasta "fqs", estarão as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2 e o arquivo "otu_table.tsv", resposta do ponto 1.4
 
