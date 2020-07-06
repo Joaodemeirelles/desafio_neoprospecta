@@ -94,7 +94,6 @@ def reports_before_trimm():
 
         sample = file.split("_")[0]
 
-        print(sample)
         run_terminal("mkdir {}".format(sample))
         run_terminal("mv {} {}".format(file,sample))
 
