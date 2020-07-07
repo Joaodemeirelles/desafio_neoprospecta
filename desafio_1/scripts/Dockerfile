@@ -35,5 +35,4 @@ RUN mv trimm_and_classify_otu.py gg-13-8-99-515-806-nb-classifier.qza 99_otus_gg
 # Instala cutadapt para Trim Galore
 RUN python3 -m pip install --user --upgrade cutadapt
 
-
-RUN cd Desafio_Neoprospecta 
+WORKDIR /Desafio_Neoprospecta
