@@ -35,6 +35,12 @@ docker cp desafio_2:/dados_recebidos/ .
   
 Dentro do diretório "resultados" estão os diretórios "meus_dados", aonde os pontos 2.1, 2.2 e 2.3 foram executados na OTU table gerada pelo pipeline seguido na minha resposta da parte 1 e "dados_recebidos", aonde foram executadas na OTU table dada como resposta na pasta "tables".
 
+</p>
+
+<p>&nbsp;</p>
+
+<p>
+
 Nos diretórios "meus_dados" e "dados_recebidos", os arquivos: 
 
 - "Otu_Table_plot_absolute.png" e "Otu_Table_plot_percent.png" respondem o ponto 2.1.
