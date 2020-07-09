@@ -17,8 +17,6 @@ docker run --name desafio_2 jlmeirelles/desafio_neoprospecta_2
 
 </p>
 
-<p>&nbsp;</p>
-
 <p>
 4. Após os comandos rodados, para analisar os arquivos fora do container:
  
