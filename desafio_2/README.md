@@ -3,23 +3,31 @@
 Link do Docker: https://hub.docker.com/repository/docker/jlmeirelles/desafio_neoprospecta_2
 <p>
 Para rodar o Docker, os comandos são:
-  
-**docker pull jlmeirelles/desafio_neoprospecta_2:latest**
-  
-**docker run --name desafio_2 jlmeirelles/desafio_neoprospecta_2**
+ 
+1. Pull do Docker Hub:
+```
+docker pull jlmeirelles/desafio_neoprospecta_2:latest
+```
+
+2. Criar container de imagem:
+
+```
+docker run --name desafio_2 jlmeirelles/desafio_neoprospecta_2
+```
 
 </p>
 
 <p>&nbsp;</p>
 
 <p>
-Após os comandos rodados, para analisar os arquivos fora do container:
+4. Após os comandos rodados, para analisar os arquivos fora do container:
+ 
+```
+docker cp desafio_2:/meus_dados/ .
 
-**<abrir outro terminal com o container aberto e rodar:>**
+docker cp desafio_2:/dados_recebidos/ .
 
-**docker cp desafio_2:/meus_dados/ .**
-
-**docker cp desafio_2:/dados_recebidos/ .**
+```
 
 </p>
 
