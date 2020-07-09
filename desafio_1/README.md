@@ -5,11 +5,23 @@ Link do Docker: https://hub.docker.com/repository/docker/jlmeirelles/desafio_neo
 <p>
 Para rodar o Docker, os comandos são:
 
-**docker pull jlmeirelles/desafio_neoprospecta_1:latest**
+1. Pull do Docker do Docker Hub
+ ```
+docker pull jlmeirelles/desafio_neoprospecta_1:latest
+ ```
+ 
+2. Criar container iterativo de imagem
 
-**docker run --name desafio_1 -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1**
+ ```
+docker run --name desafio_1 -it --entrypoint /bin/bash jlmeirelles/desafio_neoprospecta_1
+ ```
+ 
+3. Dentro do container, rodar script
 
-**conda run -n qiime2-2020.2 python trimm_and_classify_otu.py**
+ ```
+conda run -n qiime2-2020.2 python trimm_and_classify_otu.py
+ ```
+ 
 </p>
 
 <p>&nbsp;</p>
