@@ -28,6 +28,11 @@ conda run -n qiime2-2020.2 python trimm_and_classify_otu.py
 docker cp desafio_1:/Desafio_Neoprospecta/ .
 
  ```
+ </p>
+ <p>&nbsp;</p>
+ 
+<p>
+  
 Dentro do diretório "fqs":
 - Os diretórios "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2 
 
