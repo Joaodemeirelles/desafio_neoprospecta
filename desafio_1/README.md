@@ -34,8 +34,9 @@ Dentro do diretório "fqs":
 - O arquivo "otu_table.tsv", resposta do ponto 1.4
 
 
-Dentro da pasta "resultados":
--O arquivo "otu_table.tsv" é a resposta do ponto 1.4
+Dentro da pasta "resultados", o arquivo:
+
+- "otu_table.tsv" é a resposta do ponto 1.4
 </p>
 
 <p>&nbsp;</p>
