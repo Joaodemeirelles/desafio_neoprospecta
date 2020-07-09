@@ -18,7 +18,7 @@ docker run --name desafio_2 jlmeirelles/desafio_neoprospecta_2
 </p>
 
 <p>
-4. Após os comandos rodados, para analisar os arquivos fora do container:
+4. Copia os diretórios para fora do container:
  
 ```
 docker cp desafio_2:/meus_dados/ .
