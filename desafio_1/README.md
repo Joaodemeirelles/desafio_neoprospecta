@@ -27,12 +27,13 @@ conda run -n qiime2-2020.2 python trimm_and_classify_otu.py
 <p>&nbsp;</p>
 
 <p>
-Após os comandos rodados, para analisar os arquivos fora do container:
 
-**<abrir outro terminal com o container aberto e rodar:>**
+4. Após os comandos rodados, para analisar os arquivos fora do container:
 
-**docker cp desafio_1:/Desafio_Neoprospecta/ .**
+ ```
+docker cp desafio_1:/Desafio_Neoprospecta/ .
 
+ ```
 Dentro da pasta "fqs", estarão as pastas "reports_after" e "reports_before", referentes aos desafios 1.1 e 1.2 e o arquivo "otu_table.tsv", resposta do ponto 1.4
 
 Dentro da pasta "resultados", o arquivo "otu_table.tsv" é a resposta do ponto 1.4
