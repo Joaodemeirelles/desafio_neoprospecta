@@ -48,10 +48,10 @@ Dentro do diretório "respostas":
 
 - O arquivo "otu_table.tsv", referente ao desafio 1.4
 
-Dentro da pasta "scripts":
+Dentro da pasta "scripts", o arquivo:
 
-- o arquivo "trimm_and_classify_otu.py", responsável pela resposta dos desafios 1.3, 1.4 e 1.5.
+- "trimm_and_classify_otu.py", responsável pela resposta dos desafios 1.3, 1.4 e 1.5.
 
-- O arquivo "Dockerfile" responsável pela resposta ao desafio 1.6.
+- "Dockerfile" responsável pela resposta ao desafio 1.6.
 </p>
 
