@@ -66,5 +66,9 @@ Dentro do diretório "scripts", o arquivo:
 - "pcoa_plot.txt" responde ao ponto 2.2.
 
 - "deseq2_otu.txt" responde ao ponto 2.3.
+
+- "format_otu_table.py" e "format_otu_table_dado.py" foram utilizados para formatar a OTU Table.
+
+- "remove_duplicates.py" para remover duplicatas dos dados recebidos e somar suas contagems
 </p>
 
