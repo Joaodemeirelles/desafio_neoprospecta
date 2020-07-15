@@ -65,6 +65,6 @@ Dentro do diretório "scripts", o arquivo:
 
 - "pcoa_plot.txt" responde ao ponto 2.2.
 
-- "deseq2_otu.txt" responde ao ponto 3.3.
+- "deseq2_otu.txt" responde ao ponto 2.3.
 </p>
 
