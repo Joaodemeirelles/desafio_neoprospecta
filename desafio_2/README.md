@@ -12,7 +12,7 @@ docker pull jlmeirelles/desafio_neoprospecta_2:latest
 2. Criar container de imagem:
 
 ```
-docker run --name desafio_2 jlmeirelles/desafio_neoprospecta_2
+docker run -d=true --name desafio_2 jlmeirelles/desafio_neoprospecta_2
 ```
 
 </p>
