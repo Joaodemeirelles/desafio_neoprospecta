@@ -17,7 +17,6 @@ dds <- dds[keep,]
 
 dds <- DESeq(dds)
 res <- results(dds)
-resLFC <- lfcShrink(dds, coef="time_Late_vs_Early", type="apeglm")
 resOrdered <- res[order(res$pvalue),]
 resOrdered <- subset(resOrdered, padj < 0.05)
 
